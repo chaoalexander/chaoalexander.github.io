@@ -5,8 +5,8 @@ author:
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
-  Hi,this is Alex,I'm learning ML and DL,I'm sharing some learning process records.In addition, I am a product manager of an Internet company, and I focus on the application of big data.
+# description: >
+#  Hi,this is Alex,I'm learning ML and DL,I'm sharing some learning process records.In addition, I am a product manager of an Internet company, and I focus on the application of big data.
 
 # Build settings
 
@@ -22,6 +22,11 @@ plugins:
 # Theme-specific settings
 
 minima:
+  header_pages:
+  - index.md
+  - about.md
+  - contact.md
+
   # Minima date format.
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
   #
@@ -29,7 +34,7 @@ minima:
 
   # Generate social links in footer.
   #
-  #social_links:
+  social_links:
   #   - { platform: devto,          user_url: "https://dev.to/jekyll" }
   #   - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
   #   - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
@@ -43,14 +48,14 @@ minima:
   #   - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
   #   - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
   #   - { platform: telegram,       user_url: "https://t.me/jekyll" }
-  #   - { platform: twitter,        user_url: "https://twitter.com/Mrdaoji" }
+    - { platform: twitter,        user_url: "https://twitter.com/Mrdaoji" }
   #   - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
 # If you want to link only specific pages in your header, uncomment this and add the path to the pages in
 # order as they should show up.
 #
-# header_pages:
-#   - about.md
+  header_pages:
+  - about.md
 
 # Set to `true` to show excerpts on the homepage.
 #
@@ -58,4 +63,6 @@ show_excerpts: true
 
 paginate: 5
 paginate_path: "/page:num/"
+
+favicon: /assets/images/dog.ico
 
