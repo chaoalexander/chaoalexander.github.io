@@ -2,13 +2,18 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $border-color-03;
-  border-bottom: 1px solid $border-color-01;
-  min-height: $spacing-unit * 1.865;
-  line-height: $base-line-height * $base-font-size * 2.25;
+border: none; /* 去掉边框 /
+background-color: transparent; / 去掉背景色 */
+min-height: $spacing-unit * 1.865;
+line-height: $base-line-height * $base-font-size * 2.25;
+position: relative;
 
-  // Positioning context for the mobile navigation icon
-  position: relative;
+/* 修改字体样式 */
+font-family: "Helvetica Neue", Arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 0.05em;
 }
 
 .site-title {
@@ -287,20 +292,43 @@
 
 
 .social-media-list {
-  display: table;
-  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10;
+  padding: 0;
+  
   li {
-    float: left;
-    margin: 5px 10px 5px 0;
-    &:last-of-type { margin-right: 0 }
+    list-style: none;
+    margin-right: 5px;
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
+    
     a {
-      display: block;
-      padding: 10px 12px;
-      border: 1px solid $border-color-01;
-      &:hover { border-color: $border-color-02 }
+      display: flex;
+      color: #333;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+      
+      svg {
+        width: 25px;
+        height: 25px;
+        fill:  #159;
+      }
+      
+      &:hover {
+        background-color: #f1f1f1;
+      }
     }
   }
 }
+
 
 
 
