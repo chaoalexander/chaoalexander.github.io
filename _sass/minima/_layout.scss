@@ -9,10 +9,10 @@ line-height: $base-line-height * $base-font-size * 2.25;
 position: relative;
 
 /* 修改字体样式 */
-font-family: "Helvetica Neue", Arial, sans-serif;
-font-size: 16px;
+font-family: "Segoe UI", Arial, sans-serif;
+font-size: 15px;
 font-weight: bold;
-text-transform: uppercase;
+/*text-transform: uppercase;*/
 letter-spacing: 0.05em;
 }
 
@@ -126,7 +126,7 @@ letter-spacing: 0.05em;
 /**
  * Site footer
  */
-.site-footer {
+/*.site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
 }
@@ -199,7 +199,7 @@ letter-spacing: 0.05em;
     }
   }
 }
-
+*/
 
 
 /**
@@ -340,7 +340,7 @@ letter-spacing: 0.05em;
   @extend .social-media-list;
   li {
     a, div {
-      min-width: 41px;
+      min-width: 40px;
       text-align: center;
       box-sizing: border-box;
     }

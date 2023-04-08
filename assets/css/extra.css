@@ -1,0 +1,107 @@
+/*分页样式*/
+.pager {
+  background-color: #fff; 
+}
+
+.pager {
+  margin: 0;
+  text-align: center;
+}
+
+.pager .pagination {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+}
+
+.pager .pagination li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.pager .pagination li .pager-edge {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.pager .pagination li a,
+.pager .pagination li .current-page {
+  display: inline-block;
+  margin: 0;
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pager .pagination li a:hover {
+  background-color: #ddd;
+}
+
+.pager .pagination li .current-page {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+/*内容卡样式*/
+.post-card {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.post-card-header h5 {
+  margin: 0;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.post-summary {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/*返回顶部*/
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* 将按钮形状更改为圆形 */
+    background-color: rgba(10, 10, 10, 0.3);
+    color: #fff;
+    cursor: pointer;
+    text-align: center; /* 居中按钮中的文本 */
+    line-height: 30px; /* 垂直居中按钮中的文本 */
+}
+
+#back-to-top:hover {
+    background-color: #333;
+}
+
+#back-to-top::before {
+  content: "\2191";
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
