@@ -292,15 +292,15 @@ letter-spacing: 0.05em;
 
 
 .social-media-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 10;
+  width: 100%;
   padding: 0;
+  margin: 0 10px 10px;
+  text-align: left;
   
   li {
+    display: inline-block;
     list-style: none;
-    margin-right: 5px;
+    margin-right: 10px;
     
     &:last-of-type {
       margin-right: 0;
@@ -311,14 +311,14 @@ letter-spacing: 0.05em;
       color: #333;
       align-items: center;
       justify-content: center;
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
       border: none;
       background-color: transparent;
       
       svg {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         fill:  #159;
       }
       
