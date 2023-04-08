@@ -11,6 +11,8 @@ author:
 # Build settings
 
 theme: minima
+disqus:
+  shortname: chaoalexander
 
 plugins:
   - jekyll-feed
@@ -23,14 +25,12 @@ plugins:
 
 minima:
   header_pages:
-  - index.md
   - about.md
-  - contact.md
 
   # Minima date format.
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
   #
-  # date_format: "%b %-d, %Y"
+  date_format: "%b %-d, %Y"
 
   # Generate social links in footer.
   #
@@ -54,8 +54,7 @@ minima:
 # If you want to link only specific pages in your header, uncomment this and add the path to the pages in
 # order as they should show up.
 #
-  header_pages:
-  - about.md
+
 
 # Set to `true` to show excerpts on the homepage.
 #
@@ -65,4 +64,5 @@ paginate: 5
 paginate_path: "/page:num/"
 
 favicon: /assets/images/dog.ico
+
 
