@@ -1,9 +1,5 @@
 /*分页样式*/
 .pager {
-  background-color: #fff; 
-}
-
-.pager {
   margin: 0;
   text-align: center;
 }
@@ -11,6 +7,7 @@
 .pager .pagination {
   margin: 0;
   padding: 0;
+  text-align: center;
   display: inline-block;
   list-style: none;
 }
@@ -30,10 +27,14 @@
 
 .pager .pagination li a,
 .pager .pagination li .current-page {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
-  padding: 0.5em;
-  border: 1px solid #ddd;
+  padding: 0;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
   background-color: #f5f5f5;
   color: #333;
   text-decoration: none;
@@ -47,16 +48,29 @@
 .pager .pagination li .current-page {
   background-color: #333;
   color: #fff;
-  border-color: #333;
+}
+
+
+
+.pager .pagination li a:hover {
+  background-color: #ddd;
+}
+
+.pager .pagination li .current-page {
+  background-color: #333;
+  color: #fff;
 }
 
 /*内容卡样式*/
 .post-card {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 10px;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 16pt;
+  max-height: 12em;
+  overflow: hidden;
+
 }
 
 .post-card-header h5 {
@@ -104,4 +118,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* 设置footer的高度 */
+footer {
+  height: 60px; /* 根据实际情况调整高度 */
 }

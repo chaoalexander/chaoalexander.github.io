@@ -36,7 +36,7 @@ layout: base
     </a>
   </h5>
   <p class="post-date">{{ post.date | date: "%Y-%m-%d" }}</p>
-  <p class="post-summary">{{ post.excerpt }}</p>
+  <p class="post-summary">{{ post.excerpt | truncatewords: 30 }}</p>
   </div>
 </li>
 
