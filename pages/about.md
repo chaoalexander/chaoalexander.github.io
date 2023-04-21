@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Hi,this is Alex,a fresher in ML and DL,I hope to make progress in this field.I will record my learning process in this blog and I hope I can persist in.
+Hi,this is Alex,a fresher in ML and DL,I hope to make progress in this field.I will record my learning process in this blog and I hope I can persist in.Unless necessary, I will not focus too much on theory and instead focus on how to use it to solve practical problems.
