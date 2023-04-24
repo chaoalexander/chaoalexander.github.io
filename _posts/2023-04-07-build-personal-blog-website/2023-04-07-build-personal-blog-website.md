@@ -95,7 +95,7 @@ If you can run the above command successfully, you can view your website locally
 	  {- endif -% }
 	```
 
-	Add css to paginate buttom
+	Add css to paginate button
 	```shell
 	vim ./assets/css/extra.css
 	```
@@ -453,7 +453,7 @@ If you can run the above command successfully, you can view your website locally
 	});
 	````
 
-	Add a buttom to the post.html, place it in the bottom right corner of the page
+	Add a button to the post.html, place it in the bottom right corner of the page
 
 	_layouts/post.html
 	```html
@@ -470,7 +470,7 @@ If you can run the above command successfully, you can view your website locally
 
 	<a href="#" id="back-to-top"></a>
 	```
-	Add css to the buttom
+	Add css to the button
 
 	/assets/css/extra.css
 	```css
